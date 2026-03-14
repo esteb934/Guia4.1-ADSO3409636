@@ -1,0 +1,22 @@
+
+real base, altura, area
+caracter siga
+
+
+inicio
+
+siga <- 's'
+mientras (siga = 's') o (siga = 's') haga
+escriba "Base ?" 
+lea base
+escriba "altuta ?"
+lea altura
+area <- base * altura
+escriba "el area es : ", area
+llamar nueva_linea
+escriba "desea continuar (S/N)"
+lea siga
+fin mientras
+
+
+fin 
