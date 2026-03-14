@@ -7,7 +7,7 @@ inicio
     i <- 1
     
     mientras(i <= 10) haga
-        escriba numero," x ",i," = ",numero*i
+        escriba numero," x ",i," = ",numero * i
         llamar nueva_linea
         i <- i + 1
     fin mientras
