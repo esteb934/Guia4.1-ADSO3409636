@@ -42,6 +42,8 @@ inicio
     fin mientras
     
     escriba "Aprobaron: ",aprobaron
+    llamar nueva_linea 
     escriba "Reprobaron: ",reprobaron
+    llamar nueva_linea
     escriba "Promedio del grupo: ",suma_promedios/contador
 fin
