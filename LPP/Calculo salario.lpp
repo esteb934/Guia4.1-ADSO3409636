@@ -1,10 +1,10 @@
 real horas,valor_hora,salario
-caracter seguir
+caracter siga
 
 inicio
-    seguir <- 'S'
+    siga <- 'S'
     
-    mientras(seguir = 'S') o (seguir = 's') haga
+    mientras(siga = 'S') o (siga = 's') haga
     
         escriba "Horas trabajadas"
         lea horas
@@ -15,9 +15,11 @@ inicio
         salario <- horas * valor_hora
         
         escriba "Salario: ",salario
-        
+
+        llamar nueva_linea
+
         escriba "Desea ingresar otro trabajador (S/N)"
-        lea seguir
+        lea siga
         
     fin mientras
 fin
