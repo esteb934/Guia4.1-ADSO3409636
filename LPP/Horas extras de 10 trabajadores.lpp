@@ -1,21 +1,23 @@
 entero i, horas
-real pago, total
+real pago
 
 inicio
     i <- 1
     
     mientras(i <= 10) haga
-    
-        escriba "Horas trabajadas"
+    	escriba "trabajador", i
+    	llamar nueva_linea
+        escriba "Horas trabajadas : "
         lea horas
         
         si(horas > 40) entonces
-            pago <- 40*10 + (horas-40)*15
+            pago <- 40 * 10 + (horas - 40 )* 15
         sino
-            pago <- horas*10
+            pago <- horas * 10
         fin si
         
-        escriba "Pago del trabajador: ",pago
+        escriba "Pago del trabajador: ", pago 
+        llamar nueva_linea
         
         i <- i + 1
         
