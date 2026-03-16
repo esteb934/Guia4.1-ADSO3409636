@@ -1,49 +1,57 @@
 entero codigo
-cadena nombre
-real nota1,nota2,nota3,promedio
-entero aprobaron,reprobaron,contador
+cadena [30] nombre
+real nota1, nota2, nota3, promedio
+entero aprobaron, reprobaron, contador
 real suma_promedios
 
 inicio
+
     aprobaron <- 0
     reprobaron <- 0
     contador <- 0
     suma_promedios <- 0
-    
-    mientras(contador < 3) haga
-    
-        escriba "Codigo"
+
+    mientras (contador < 3) haga
+
+        llamar nueva_linea
+        escriba "----- DATOS DEL ESTUDIANTE -----"
+		llamar nueva_linea
+        escriba "Codigo: "
         lea codigo
         
-        escriba "Nombre"
+        escriba "Nombre: "
         lea nombre
         
-        escriba "Nota 1"
+        escriba "Nota 1: "
         lea nota1
-        
-        escriba "Nota 2"
+
+        escriba "Nota 2: "
         lea nota2
-        
-        escriba "Nota 3"
+
+        escriba "Nota 3: "
         lea nota3
         
         promedio <- (nota1 + nota2 + nota3) / 3
         
         suma_promedios <- suma_promedios + promedio
         
-        si(promedio >= 3) entonces
+        si (promedio >= 3) entonces
             aprobaron <- aprobaron + 1
         sino
             reprobaron <- reprobaron + 1
         fin si
         
         contador <- contador + 1
-        
+
     fin mientras
     
-    escriba "Aprobaron: ",aprobaron
-    llamar nueva_linea 
-    escriba "Reprobaron: ",reprobaron
     llamar nueva_linea
-    escriba "Promedio del grupo: ",suma_promedios/contador
+    escriba "----- RESULTADOS -----"
+    llamar nueva_linea
+    escriba "Aprobaron: ", aprobaron
+    llamar nueva_linea
+    escriba "Reprobaron: ", reprobaron
+    llamar nueva_linea
+    escriba "Promedio del grupo: ", suma_promedios / contador
+
 fin
